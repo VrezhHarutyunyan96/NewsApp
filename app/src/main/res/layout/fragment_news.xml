@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.android.menu.newsapp.ui.home.viewmodel.NewsViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchMaterial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/switch_margin_top"
+            android:layout_marginEnd="@dimen/switch_margin_end"
+            android:layout_marginBottom="@dimen/switch_margin_bottom"
+            android:checked="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:switch_listener="@{model::onDataTypeChanged}" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/newsRv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/rv_news_margin_top"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switchMaterial" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

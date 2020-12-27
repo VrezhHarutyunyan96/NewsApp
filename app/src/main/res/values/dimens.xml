@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="details_image_height">200dp</dimen>
+    <dimen name="news_title_txt_size">18sp</dimen>
+    <dimen name="news_category_txt_size">16sp</dimen>
+    <dimen name="switch_margin_end">20dp</dimen>
+    <dimen name="switch_margin_top">10dp</dimen>
+    <dimen name="switch_margin_bottom">20dp</dimen>
+    <dimen name="rv_news_margin_top">10dp</dimen>
+    <dimen name="title_margin">16dp</dimen>
+    <dimen name="content_margin">16dp</dimen>
+    <dimen name="content_margin_end">8dp</dimen>
+    <dimen name="date_margin">16dp</dimen>
+    <dimen name="date_margin_end">8dp</dimen>
+    <dimen name="save_image_margin">8dp</dimen>
+    <dimen name="save_image_margin_end">16dp</dimen>
+
+</resources>
